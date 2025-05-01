@@ -34,6 +34,7 @@ jobs:
 
       - name: Terraform Init
         run: terraform init
+        working-directory: ./terraform
       - name: Create AWS config for profile "jenkins"
         run: |
          mkdir -p ~/.aws
@@ -45,6 +46,7 @@ jobs:
          echo "aws_session_token = ${{ secrets.AWS_SESSION_TOKEN }}"
       - name: Terraform Plan
         run: terraform plan
+        working-directory: ./terraform
 
       - name: Terraform Apply
         run: terraform apply -auto-approve
