@@ -4,7 +4,7 @@ provider "aws" {
 module "s3_bucket" {
   source = "./.modules/aws/s3"
 
-  bucket = "my-s3-bucket-6424"
+  bucket = "my-s3-bucket-1001"
   acl    = "private"
 
   control_object_ownership = true
