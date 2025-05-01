@@ -1,2 +1,0 @@
-cd ..
-terraform fmt -recursive .
