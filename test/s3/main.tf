@@ -2,7 +2,7 @@ provider "aws" {
   region = "ap-south-1"
 }
 module "s3_bucket" {
-  source = "../../.modules/aws/s3"
+  source = "../...modules/aws/s3"
 
   bucket = "my-s3-bucket-1001"
   acl    = "private"
