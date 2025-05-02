@@ -2,7 +2,7 @@ provider "aws" {
   region = "ap-south-1"
 }
 module "s3_bucket" {
-  source = "git::https://github.com/kritika618/terraform_new_modules.git//.modules/aws/ecs"
+  source = "../../.modules/aws/s3"
 
   bucket = "my-s3-bucket-1001"
   acl    = "private"
