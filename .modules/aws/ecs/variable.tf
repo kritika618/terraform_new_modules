@@ -25,7 +25,7 @@ variable "default_capacity_provider" {
 variable "environment" {
   description = "Environment tag (e.g., dev, staging, prod)"
   type        = string
-  default     = "dev"
+
 }
 
 variable "project_name" {
