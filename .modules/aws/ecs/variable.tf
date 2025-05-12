@@ -31,5 +31,5 @@ variable "environment" {
 variable "project_name" {
   description = "Project name tag"
   type        = string
-  default     = "ecs-project"
+
 }
