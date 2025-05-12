@@ -4,11 +4,6 @@ variable "aws_region" {
   default     = "ap-south-1"
 }
 
-variable "ecs_cluster_name" {
-  description = "Name of the ECS cluster"
-  type        = string
-
-}
 
 variable "capacity_providers" {
   description = "List of ECS capacity providers (e.g., FARGATE, FARGATE_SPOT)"
