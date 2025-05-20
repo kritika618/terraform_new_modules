@@ -4,7 +4,7 @@ module "s3_bucket" {
 }
 
 resource "aws_s3_bucket" "this" {
-  bucket = var.bucket_name
+  bucket = var.bucket
   acl    = var.acl
   tags   = var.tags
 }
